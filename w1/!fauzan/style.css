@@ -1,0 +1,14 @@
+.example {
+  font-family: system-ui;
+  font-size: 1.2rem;
+}
+
+.example > a {
+  color: tomato;
+}
+
+.example > a:hover,
+.example > a:focus {
+  color: ivory;
+  background-color: tomato;
+}
