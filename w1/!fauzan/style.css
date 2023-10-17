@@ -1,14 +1,50 @@
+body {
+  background-color: #221f31;
+}
+
+img {
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* p {
+  color: purple;
+} */
+
+/* #contoh.example {
+  color: red;
+}
+
 .example {
-  font-family: system-ui;
-  font-size: 1.2rem;
+  color: white;
+} */
+
+/* p:has(a) {
+  color: red;
+} */
+
+/* div {
+  & a {
+    color: red;
+  }
+} */
+
+/* a.anchor-forum-tag-id {
+  color: purple;
+} */
+
+/* a {
+  color: red;
+} */
+
+/* * + * + * {
+  color: red;
+} */
+
+span + a {
+  color: red;
 }
 
-.example > a {
-  color: tomato;
-}
-
-.example > a:hover,
-.example > a:focus {
-  color: ivory;
-  background-color: tomato;
+span:has(+ a) {
+  color: red;
 }
