@@ -11,7 +11,7 @@
 - Udah pake flexbox 👍
 - Udah pake media query 👍
 - Penggunaan `margin` bisa disingkat
-- Biasin `class` pake bahasa inggris
+- `class` bisa pake bahasa inggris aja
 - Bisa coba manfaatin nested css
 
 ## Fachrezi
