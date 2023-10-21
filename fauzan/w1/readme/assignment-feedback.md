@@ -18,8 +18,9 @@
 ## Fachrezi
 
 - Requirement 💯
-- Masih ada error di HTML (?)
+- Belum ada alert (?)
 - Readme belum ada image
+- File CSS bisa dipisah aja
 
 ## Haikal Bintang
 
