@@ -10,7 +10,6 @@
 - Requirement 💯
 - Udah pake flexbox 👍
 - Udah pake media query 👍
-- Hindari penggunaan `float`
 - Penggunaan `margin` bisa disingkat
 - Biasin `class` pake bahasa inggris
 - Bisa coba manfaatin nested css
