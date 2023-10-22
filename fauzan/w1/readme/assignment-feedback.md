@@ -25,7 +25,6 @@
 
 - Requirement 💯
 - Udah ada css reset 👍
-- Udah pake css variable 👍
 - Udah pake flexbox dan grid 👍
 - CSS file rapih 👍
 
