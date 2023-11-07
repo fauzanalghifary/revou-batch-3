@@ -24,7 +24,6 @@
 ## Iman
 
 - Belum implement srcset(?) 😥
-- Mungkin lebih baik kalau file CSS bisa dipisah per section
 - Prettier merah di file css
 
 ## Iry
