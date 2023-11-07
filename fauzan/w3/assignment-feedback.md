@@ -1,6 +1,6 @@
 ## Amanda Satya
 
-- All requirement ✅
+- All requirements ✅
 - File CSS bisa lebih rapih
 - Penamaan class bisa lebih baik
 
@@ -18,7 +18,7 @@
 
 ## Haikal Bintang
 
-- All requirement ✅
+- All requirements ✅
 - 👍👍👍
 
 ## Iman
