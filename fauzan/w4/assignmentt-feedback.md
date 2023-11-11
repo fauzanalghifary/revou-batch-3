@@ -1,3 +1,11 @@
+# Advanced Assignment
+
+- Amanda Satya 💚💚💚
+- Haikal Bintang 💚💚💚
+- Iman 💚💚
+- Iry 💚💚💚
+- Putri 💚💚💚
+
 ## Amanda Satya
 
 - All requirements ✅
