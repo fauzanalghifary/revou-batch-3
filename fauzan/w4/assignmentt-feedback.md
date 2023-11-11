@@ -13,7 +13,7 @@
 
 - In the documentation, images are not rendering 😥
 - The grid usage is still incorrect ❌
-- Folder structure could be more organized.
+- Folder structure can be more organized.
 
 ## Haikal Bintang
 
