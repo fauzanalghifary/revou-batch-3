@@ -32,7 +32,8 @@
 
 ## Michael
 
-- Documentation is not complete 😥
+- All requirements ✅
+- 🥬🥬🥬
 
 ## Putri
 
