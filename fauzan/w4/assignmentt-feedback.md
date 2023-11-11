@@ -9,13 +9,12 @@
 ## Amanda Satya
 
 - All requirements ✅
-- It's better to use English in documentation.
+- 🐊🐊🐊
 
 ## Catur
 
 - All requirements ✅
-- It's better to use English in documentation.
-- Folder structure can be more organized.
+- 🐍🐍🐍
 
 ## Fachrezi
 
