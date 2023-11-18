@@ -1,15 +1,19 @@
-## Amanda Satya
+## Milestone 1 Feedback
 
-## Catur
+- use semantic HTML
+- use english on documentation
 
-## Fachrezi
+- utilize nested CSS to improve readability
+- use descriptive class name
+- use CSS variable
+- use CSS shorthand
+- use CSS reset
+- familiarize with CSS mobile-first approach
 
-## Haikal Bintang
+- learn UI/UX (it helps!)
 
-## Iman
+## What's Next?
 
-## Iry
-
-## Michael
-
-## Putri
+- practice CSS with frontendmentor.io
+- explore CSS Frameworks
+- learn Javascript
