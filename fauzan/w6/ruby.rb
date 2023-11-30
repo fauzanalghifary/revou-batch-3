@@ -1,0 +1,2 @@
+FRUIT = "orange"
+FRUIT = "apple"

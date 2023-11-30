@@ -5,13 +5,13 @@ const age = 22; // number
 const height = 1.7; // number
 
 // console.log(firstName + " is " + age + " years old.");
-// console.log(`${firstName} is ${age} years old.`);
+console.log(`${firstName} is ${isMarried}`);
 
 // console.log(typeof age === "number"); // true
 
 const maxNum = Infinity; // number
 
-const isMarried = false; // boolean
+var isMarried = false; // boolean
 
 let foo; // undefined => unintentional
 let bar = null; // null => intentional
