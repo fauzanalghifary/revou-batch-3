@@ -33,7 +33,7 @@ const address = {
   country: null,
 };
 
-// console.log(address.country); // null
+console.log(address.country); // null
 // console.log(address.province); // undefined
 // console.log(address["street"]); // Jl. Raya Cipadung
 // console.log(Object.keys(address).find((key) => address[key] === "Bandung"));

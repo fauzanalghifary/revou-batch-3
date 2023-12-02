@@ -135,18 +135,23 @@ const askQuestion = () => {
 
 //
 
-const isPowerOfTwo = (number) => {
-  if (number % 1 !== 0) {
-    return false;
-  }
+// const isPowerOfTwo = (number) => {
+//   if (number % 1 !== 0) {
+//     return false;
+//   }
 
-  if (number === 1) {
-    return true; // 2 ^ 0
-  }
+//   if (number === 1) {
+//     return true; // 2 ^ 0
+//   }
 
-  if (number % 2 === 1) {
-    return false; // ganjil
-  }
+//   if (number % 2 === 1) {
+//     return false; // ganjil
+//   }
 
-  return isPowerOfTwo(number / 2);
-};
+//   return isPowerOfTwo(number / 2);
+// };
+
+function PowersOfTwo(num) {
+  console.log(num);
+  return num && !(num & (num - 1));
+}
