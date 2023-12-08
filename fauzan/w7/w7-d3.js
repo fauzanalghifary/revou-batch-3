@@ -20,6 +20,9 @@ async function doSomethingAsync() {
 const triggerAsyncAwait = async () => {
   try {
     const result = await doSomethingAsync();
+    const result2 = await doSomethingAsync();
+    console.log("then 2");
+    const result3 = await doSomethingAsync();
     console.log(`Async/Await resolved with result: ${result}`);
   } catch (error) {
     console.log(`Async/Await rejected with error: ${error.message}`);
@@ -28,20 +31,43 @@ const triggerAsyncAwait = async () => {
   }
 };
 
+const third = async () => {
+  console.log("start");
+  await triggerAsyncAwait();
+  console.log("end");
+};
+
+// third();
+
 // WITHOUT ASYNC/AWAIT -------------------------------------------------------------------------------------
 
-function triggerAsyncWithoutAsyncAwait() {
+// useEffect
+
+async function triggerAsyncWithoutAsyncAwait() {
   doSomethingAsync()
     .then((result) => {
       console.log(`Async operation resolved with result: ${result}`);
+      // we do something async again
+      triggerAsyncAwait().then(() => {
+        console.log("Async operation completed!");
+        triggerAsyncAwait().then(() => {
+          console.log("Async operation completed!");
+          triggerAsyncAwait().then(() => {
+            console.log("Async operation completed!");
+          });
+        });
+      });
     })
     .catch((error) => {
       console.log(`Async operation rejected with error: ${error.message}`);
     })
     .finally(() => {
+      // func2()
       console.log("Async operation completed!");
     });
 }
+
+triggerAsyncWithoutAsyncAwait();
 
 // Callbacks -------------------------------------------------------------------------------------
 
@@ -72,4 +98,4 @@ function triggerAsyncWithCallback() {
 }
 
 // Call the function
-triggerAsyncWithCallback();
+// triggerAsyncWithCallback();
