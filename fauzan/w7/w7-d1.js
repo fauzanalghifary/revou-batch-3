@@ -1,4 +1,4 @@
-import _, { add } from "lodash";
+import lodash, { add, isEqual, orderBy } from "lodash";
 
 console.log(add(1, 2));
 
@@ -9,6 +9,6 @@ const users = [
   { name: "barney", age: 36 },
 ];
 
-const sortedUsers = _.orderBy(users, ["name", "age"], ["asc", "desc"]);
+const sortedUsers = lodash.orderBy(users, ["name", "age"], ["asc", "desc"]);
 
 console.log(sortedUsers);
