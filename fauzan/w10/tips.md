@@ -1,0 +1,3 @@
+- prettierrc
+- prettier-plugin-tailwindcss
+- Network Tab

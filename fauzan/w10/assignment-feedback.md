@@ -5,9 +5,9 @@
 - responsive web using Tailwind CSS
 - multi-step form using (Formik/react-hook-form)
 
-- using useEffect and custom hooks correctly
-- routing (register, login, list, edit, new)
-- CRUD (create, read, update, delete)
+- using useEffect, custom hooks, and useContext correctly
+- routing (register, login, list, edit, new) using react-router
+- CRUD (create, read, update, delete) category
 
 ## Amanda Satya
 
