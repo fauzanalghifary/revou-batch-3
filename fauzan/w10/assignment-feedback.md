@@ -36,7 +36,7 @@
 - responsive web ✅
 - multi-step form ❌
 
-- react hooks 🥲
+- no useContext or custom hooks 🥲
 - feature uncomplete ❌
 - well-structured React component ✅
 
