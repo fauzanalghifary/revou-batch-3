@@ -16,6 +16,8 @@
 - responsive web ✅
 - multi-step form ✅
 
+---
+
 - react hooks ✅
 - can't add new category 🥲
 - well-structured React component ✅
@@ -27,6 +29,8 @@
 - responsive web ✅
 - multi-step form ✅
 
+---
+
 - week 10 unfinished ❌❌❌
 
 ## Finuaz Iman
@@ -35,6 +39,8 @@
 - form validation still buggy 🥲
 - responsive web ✅
 - multi-step form ❌
+
+---
 
 - no useContext or custom hooks 🥲
 - feature uncomplete ❌
@@ -51,6 +57,8 @@
 - responsive web ✅
 - multi-step form ❌
 
+---
+
 - week 10 unfinished ❌❌❌
 
 ## Iry
@@ -59,6 +67,8 @@
 - form validation ✅
 - responsive web ✅
 - multi-step form ✅
+
+---
 
 - no useContext or custom hooks 🥲
 - can't edit category 🥲
@@ -71,6 +81,8 @@
 - responsive web ✅
 - multi-step form ✅
 
+---
+
 - week 10 unfinished ❌❌❌
 
 ## Putri
@@ -79,5 +91,7 @@
 - form validation ✅
 - responsive web ✅
 - multi-step form ✅
+
+---
 
 - week 10 unfinished ❌❌❌
