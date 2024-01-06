@@ -42,7 +42,8 @@
 
 ## Fachrezi
 
-- unfinished ❌
+- week 9 unfinished ❌❌❌❌
+- week 10 unfinished ❌❌❌
 
 ## Haikal Bintang
 
