@@ -28,7 +28,7 @@
 
 ## Fachrezi
 
-- unfinished? ❌
+- can't run the project? ❌
 
 ## Haikal Bintang
 
