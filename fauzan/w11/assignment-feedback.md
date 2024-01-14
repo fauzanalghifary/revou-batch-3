@@ -23,8 +23,8 @@
 
 - well-organized components ✅
 - props, state, and hooks (consume api correctly) ✅
-- can't submit form? ❌
-- can't move to other page? ❌
+- form and event handling ✅
+- react router ✅
 
 ## Fachrezi
 
@@ -33,7 +33,7 @@
 ## Haikal Bintang
 
 - well-organized components ✅
-- pokemon list not showing? ❌
+- props, state, and hooks (consume api correctly) ✅
 - form and event handling ✅
 - react router ✅
 
