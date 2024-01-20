@@ -7,7 +7,6 @@
 
 - NextJS ✅
 - NextJS fetch data in the server ✅
-- infinite loop
 
 ## Catur
 
