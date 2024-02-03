@@ -20,8 +20,8 @@
 
 - NextJS ✅
 - NextJS fetch data in the server ✅
-- Testing 2 components ❌
-- Testing custom hooks ❌
+- Testing 2 components ❌ => ✅
+- Testing custom hooks ❌ => ✅
 
 ## Fachrezi
 
@@ -33,9 +33,9 @@
 ## Haikal Bintang
 
 - NextJS ✅
-- NextJS fetch data in the server ❌
-- Testing 2 components ❌
-- Testing custom hooks ❌
+- NextJS fetch data in the server ❌ => ✅
+- Testing 2 components ❌ => ✅
+- Testing custom hooks ❌ => ✅
 
 ## Iry
 
