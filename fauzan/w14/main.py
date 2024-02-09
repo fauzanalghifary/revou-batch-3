@@ -1,9 +1,5 @@
-print("Hello")
+print("hello")
 
 
-name = "Pojan"
-
-if name == "Pojan":
-    print("Hello Pojan")
-else:
-    print("Hello Stranger")
+if __name__ == "__main__":
+    print("world")
