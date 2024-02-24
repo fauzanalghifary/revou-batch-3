@@ -13,8 +13,8 @@
 
 ## Catur
 
-- CRUD Animals and Employees ❌ (can't run the app)
-- Documentation ❌
+- CRUD Animals and Employees ❌ (can't run the app) => ✅
+- Documentation ❌ => ✅
 
 ## Finuaz Iman
 

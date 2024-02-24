@@ -1,69 +1,67 @@
 ### base url
-@BASE_URL = http://127.0.0.1:5000
+@BASE_URL = http://127.0.0.1:5000/v2
+@ANIMALS = animals
+@EMPLOYEES = employees
 
 ### GET ALL ANIMALS
-GET {{BASE_URL}}/animals
+GET {{BASE_URL}}/{{ANIMALS}}
 
 ### GET ANIMAL BY ID
-GET {{BASE_URL}}/animals/1
+GET {{BASE_URL}}/{{ANIMALS}}/1
 
 
 ### POST ANIMAL
-POST {{BASE_URL}}/animals
+POST {{BASE_URL}}/{{ANIMALS}}
 Content-Type: application/json
 
 {
-    "age": 12,
-    "gender": "male",
-    "species": "carnivore"
+    "diet": "herbivore",
+    "habitat": "forest",
+    "species": "herbivore"
 }
 
 ### UPDATE ANIMAL
-PUT {{BASE_URL}}/animals/1
+PUT {{BASE_URL}}/{{ANIMALS}}/1
 Content-Type: application/json
 
 {
-    "age": 122,
-    "gender": "male",
-    "species": "carnivore"
+    "diet": "herbivore 2",
+    "habitat": "forest",
+    "species": "herbivore"
 }
 
 
 
 ### DELETE ANIMAL
-DELETE {{BASE_URL}}/animals/1
+DELETE {{BASE_URL}}/{{ANIMALS}}/1
 
 # ==============================================
 
 ### GET ALL EMPLOYEE
-GET {{BASE_URL}}/employees
+GET {{BASE_URL}}/{{EMPLOYEES}}
 
 ### GET EMPLOYEE BY ID
-GET {{BASE_URL}}/employees/1
+GET {{BASE_URL}}/{{EMPLOYEES}}/1
 
 ### POST EMPLOYEE
-POST {{BASE_URL}}/employees
+POST {{BASE_URL}}/{{EMPLOYEES}}
 Content-Type: application/json
 
 {
-    "name": "EMP1",
-    "email": "staff@email.com",
-    "phone": "0112",
-    "role": "staff",
-    "schedule": "Monday - Friday"
+    "name": "Satya",
+    "role": "Developer",
+    "schedule": "9-5"
 }
 
 ### UPDATE EMPLOYEE
-PUT {{BASE_URL}}/employees/1
+PUT {{BASE_URL}}/{{EMPLOYEES}}/1
 Content-Type: application/json
 
 {
-    "name": "EMP12",
-    "email": "staff@email.com",
-    "phone": "0112",
-    "role": "staff",
-    "schedule": "Monday - Friday"
+    "name": "Satya 2",
+    "role": "Developer",
+    "schedule": "9-5"
 }
 
 ### DELETE EMPLOYEE
-DELETE {{BASE_URL}}/employees/12
+DELETE {{BASE_URL}}/{{EMPLOYEES}}/2
