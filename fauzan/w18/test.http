@@ -1,0 +1,97 @@
+### base url
+@BASE_URL = http://127.0.0.1:5000
+@ANIMALS = animals
+@EMPLOYEES = employees
+
+@JWT_TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNzA5OTU4MjEyLCJqdGkiOiI2YzI2MTk5My05NWM2LTRiZWQtODg2Mi05ZTNkZTk4ZjY0NzIiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjp7ImlkIjoxLCJyb2xlIjoidXNlciJ9LCJuYmYiOjE3MDk5NTgyMTIsImNzcmYiOiJlZDA5ZjRkZS04ZjMxLTQ2ZmQtOWZmZC1jZGVhZGE3MjcyMDAiLCJleHAiOjE3MDk5NTkxMTJ9.zlXf_cXdRcZ4-JS-8rM6KwZFentWwuqOpOp7MPX5lAo
+
+### GET ALL ANIMALS
+GET {{BASE_URL}}/{{ANIMALS}}
+
+### GET ANIMAL BY ID
+GET {{BASE_URL}}/{{ANIMALS}}/1
+
+
+### POST ANIMAL
+POST {{BASE_URL}}/{{ANIMALS}}
+Content-Type: application/json
+
+{
+    "diet": "herbivore",
+    "habitat": "forest",
+    "species": "herbivore"
+}
+
+### UPDATE ANIMAL
+PUT {{BASE_URL}}/{{ANIMALS}}/1
+Content-Type: application/json
+
+{
+    "diet": "herbivore 2",
+    "habitat": "forest",
+    "species": "herbivore"
+}
+
+
+
+### DELETE ANIMAL
+DELETE {{BASE_URL}}/{{ANIMALS}}/1
+
+# ==============================================
+
+### GET ALL EMPLOYEE
+GET {{BASE_URL}}/{{EMPLOYEES}}
+Authorization: Bearer {{JWT_TOKEN}}
+
+
+### GET EMPLOYEE BY ID
+GET {{BASE_URL}}/{{EMPLOYEES}}/1
+Authorization: Bearer {{JWT_TOKEN}}
+
+### POST EMPLOYEE
+POST {{BASE_URL}}/{{EMPLOYEES}}
+Authorization: Bearer {{JWT_TOKEN}}
+Content-Type: application/json
+
+{
+    "name": "Satya",
+    "division": "Developer",
+    "position": "Junior"
+}
+
+### UPDATE EMPLOYEE
+PUT {{BASE_URL}}/{{EMPLOYEES}}/1
+Content-Type: application/json
+
+{
+    "name": "Satya 2",
+    "role": "Developer",
+    "schedule": "9-5"
+}
+
+### DELETE EMPLOYEE
+DELETE {{BASE_URL}}/{{EMPLOYEES}}/2
+
+
+
+# ==============================================
+
+### REGISTER
+POST {{BASE_URL}}/register
+Content-Type: application/json
+
+{
+    "username": "catur",
+    "password": "password",
+    "role": "user"
+}
+
+### LOGIN
+
+POST {{BASE_URL}}/login
+Content-Type: application/json
+
+{
+    "username": "iman",
+    "password": "password"
+}
