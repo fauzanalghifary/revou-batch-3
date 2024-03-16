@@ -1,0 +1,122 @@
+### base url
+@BASE_URL = http://127.0.0.1:5000
+
+@JWT_TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNzEwNTc1ODc5LCJqdGkiOiIzNzRjZmVlOC0zZTVlLTQzN2QtOTdjZS02YzNjYTEzZjM4OGUiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjp7ImlkIjozLCJyb2xlIjoidXNlciJ9LCJuYmYiOjE3MTA1NzU4NzksImNzcmYiOiJhZmMyMWJkNi01ZTJlLTQ5MGUtOWFhNC1iNWQxNWRhMjRjOGIiLCJleHAiOjE3MTA1NzY3Nzl9.6t3i94MtCs9aHj1NvRM_-6IwKUrMBpnXWAv4ld8e3iA
+
+# USER ==============================================
+
+### POST USER
+POST {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+    "email": "user1@gmail.com",
+    "username": "user1",
+    "password_hash": "password"
+}
+
+### LOGIN USER
+POST {{BASE_URL}}/users/login
+Content-Type: application/json
+
+{
+    "email": "user1@gmail.com",
+    "username": "user1",
+    "password": "password"
+}
+
+### GET USER
+GET {{BASE_URL}}/users/me
+Authorization: Bearer {{JWT_TOKEN}}
+
+### UPDATE USER
+PUT {{BASE_URL}}/users/me
+Authorization: Bearer {{JWT_TOKEN}}
+Content-Type: application/json
+
+{
+    "email": "user1@gmail.com",
+    "username": "user1",
+    "password": "password"
+}
+
+
+# ACCOUNT ==============================================
+
+### GET ALL ACCOUNTS OF CURRENT USER
+GET {{BASE_URL}}/accounts
+Authorization: Bearer {{JWT_TOKEN}}
+
+
+### GET ACCOUNT BY ID
+GET {{BASE_URL}}/accounts/1
+Authorization: Bearer {{JWT_TOKEN}}
+
+### POST ACCOUNT
+POST {{BASE_URL}}/accounts
+Authorization: Bearer {{JWT_TOKEN}}
+Content-Type: application/json
+
+{
+    "account_type": "savings"
+}
+
+### UPDATE ACCOUNT
+PUT {{BASE_URL}}/accounts/3
+Authorization: Bearer {{JWT_TOKEN}}
+Content-Type: application/json
+
+{
+    "account_type": "savings",
+    "balance": 1000
+}
+
+### DELETE ACCOUNT
+DELETE {{BASE_URL}}/accounts/3
+Authorization: Bearer {{JWT_TOKEN}}
+
+# TRANSACTIONS ==============================================
+
+### GET ALL TRANSACTIONS OF CURRENT USER
+GET {{BASE_URL}}/transactions
+Authorization: Bearer {{JWT_TOKEN}}
+
+### GET TRANSACTION BY ID
+GET {{BASE_URL}}/transactions/2
+Authorization: Bearer {{JWT_TOKEN}}
+
+### POST TRANSACTION
+POST {{BASE_URL}}/transactions
+Authorization: Bearer {{JWT_TOKEN}}
+Content-Type: application/json
+
+{
+    "to_account_id": 3,
+    "from_account_id": 3,
+    "amount": 100,
+    "type": "deposit",
+    "description": "hehe"
+}
+
+# AUTH ==============================================
+
+### REGISTER
+POST {{BASE_URL}}/auth/register-jwt
+Content-Type: application/json
+
+{
+    "email": "user3@gmail.com",
+    "username": "user3",
+    "password_hash": "password"
+}
+
+### LOGIN
+
+POST {{BASE_URL}}/auth/login-jwt
+Content-Type: application/json
+
+{
+    "email": "user3@gmail.com",
+    "username": "user3",
+    "password_hash": "password"
+}
