@@ -1,7 +1,7 @@
 ### base url
 @BASE_URL = http://127.0.0.1:5000
 
-@JWT_TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNzEwNTc1ODc5LCJqdGkiOiIzNzRjZmVlOC0zZTVlLTQzN2QtOTdjZS02YzNjYTEzZjM4OGUiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjp7ImlkIjozLCJyb2xlIjoidXNlciJ9LCJuYmYiOjE3MTA1NzU4NzksImNzcmYiOiJhZmMyMWJkNi01ZTJlLTQ5MGUtOWFhNC1iNWQxNWRhMjRjOGIiLCJleHAiOjE3MTA1NzY3Nzl9.6t3i94MtCs9aHj1NvRM_-6IwKUrMBpnXWAv4ld8e3iA
+@JWT_TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6dHJ1ZSwiaWF0IjoxNzExMDE5OTI4LCJqdGkiOiIyZTM5MWI0Zi0wZjMwLTQxZDgtOWJhOS1hMTJmN2Y5NDYyOGYiLCJ0eXBlIjoiYWNjZXNzIiwic3ViIjoxLCJuYmYiOjE3MTEwMTk5MjgsImNzcmYiOiI5YzYzZTViOC00OTUwLTRjMmUtYWM3ZC04ODE3ZjRiZGQ2NjUiLCJleHAiOjE3MTEwMjA4Mjh9.PZfVPvwFj_9S-bGnVFWaUIrhgjz6jJ9vVRzVL-aIl34
 
 # USER ==============================================
 
@@ -10,18 +10,17 @@ POST {{BASE_URL}}/users
 Content-Type: application/json
 
 {
-    "email": "user1@gmail.com",
-    "username": "user1",
-    "password_hash": "password"
+    "email": "user2@gmail.com",
+    "username": "user2",
+    "password": "password"
 }
 
 ### LOGIN USER
-POST {{BASE_URL}}/users/login
+POST {{BASE_URL}}/auth/login
 Content-Type: application/json
 
 {
-    "email": "user1@gmail.com",
-    "username": "user1",
+    "username": "user2",
     "password": "password"
 }
 
@@ -49,7 +48,7 @@ Authorization: Bearer {{JWT_TOKEN}}
 
 
 ### GET ACCOUNT BY ID
-GET {{BASE_URL}}/accounts/1
+GET {{BASE_URL}}/accounts/3
 Authorization: Bearer {{JWT_TOKEN}}
 
 ### POST ACCOUNT
@@ -67,12 +66,11 @@ Authorization: Bearer {{JWT_TOKEN}}
 Content-Type: application/json
 
 {
-    "account_type": "savings",
-    "balance": 1000
+    "account_type": "savings"
 }
 
 ### DELETE ACCOUNT
-DELETE {{BASE_URL}}/accounts/3
+DELETE {{BASE_URL}}/accounts/2
 Authorization: Bearer {{JWT_TOKEN}}
 
 # TRANSACTIONS ==============================================
@@ -82,7 +80,7 @@ GET {{BASE_URL}}/transactions
 Authorization: Bearer {{JWT_TOKEN}}
 
 ### GET TRANSACTION BY ID
-GET {{BASE_URL}}/transactions/2
+GET {{BASE_URL}}/transactions/1
 Authorization: Bearer {{JWT_TOKEN}}
 
 ### POST TRANSACTION
@@ -92,8 +90,46 @@ Content-Type: application/json
 
 {
     "to_account_id": 3,
-    "from_account_id": 3,
-    "amount": 100,
+    "from_account_id": 4,
+    "amount": 500,
+    "type": "transfer",
+    "description": "hehe"
+}
+
+### POST TRANSACTION
+POST {{BASE_URL}}/transactions/withdrawal
+Authorization: Bearer {{JWT_TOKEN}}
+Content-Type: application/json
+
+{
+    "from_account_id": "2",
+    "amount": 200,
+    "type": "deposit",
+    "description": "hehe"
+}
+
+
+### POST TRANSACTION
+POST {{BASE_URL}}/transactions/deposit
+Authorization: Bearer {{JWT_TOKEN}}
+Content-Type: application/json
+
+{
+    "to_account_id": "2",
+    "amount": 200,
+    "type": "deposit",
+    "description": "hehe"
+}
+
+### POST TRANSACTION
+POST {{BASE_URL}}/transactions/transfer
+Authorization: Bearer {{JWT_TOKEN}}
+Content-Type: application/json
+
+{
+    "from_account_id": "2",
+    "to_account_id": "1",
+    "amount": 2000,
     "type": "deposit",
     "description": "hehe"
 }
